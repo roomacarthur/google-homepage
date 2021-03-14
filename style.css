@@ -1,0 +1,22 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+#navbar {
+    height: 44px;
+}
+#app-menu {
+    width: 32px;
+    height: 32px;
+}
+
+#main {
+
+}
+
+
+#footer {
+
+}
