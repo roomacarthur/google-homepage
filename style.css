@@ -1,15 +1,59 @@
-* {
+body {
     font-family: Arial, Helvetica, sans-serif;
     text-decoration: none;
     box-sizing: border-box;
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
 }
 
 #navbar {
+    display: grid;
+    grid-template-columns: 50px 50px 1fr 50px 50px 50px 50px;
+    grid-template-rows: 50px;
+    grid-template-areas: 
+    "about store . gmail images app-menu sign-in";
     height: 44px;
+    color: black;
+    margin-top: 5px;
+    margin-left: 20px;
+    margin-right: 20px;
+    overflow: hidden;
+    align-items: center;
+}
+#about {
+    grid-area: about;
+}
+#store {
+    grid-area: store;
+}
+#images {
+    grid-area: images;
+}
+#gmail {
+    grid-area: gmail;
 }
 #app-menu {
-    width: 32px;
-    height: 32px;
+    grid-area: app-menu;
+}
+#sign-in {
+    grid-area: sign-in;
+}
+
+#sign-in-btn {
+    width: 100px;
+    height: 30px;
+    border: 0px solid white;
+    border-radius: 2px;
+    color: white;
+    background-color: #00A1f1;
+    font-weight:bold;
+    font-size: 1rem;
+    
+}
+#app-menu-btn {
+    width: 30px;
+    height: 30px;
 }
 
 #main {
@@ -18,5 +62,43 @@
 
 
 #footer {
-
+    color: #70757a;
+    text-decoration: none;
+    height: 50px;
+    width: 100%;
+    background-color: rgb(207, 203, 203);
+    border-bottom: 1px solid grey;
+    font-size: 14px;
+    text-align: center;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: 100px 100px 150px 1fr 75px 75px 75px;
+    grid-template-rows: 50px;
+    grid-template-areas: 
+    "advert business how-search-works carbon privacy terms settings";
+}
+#advertising {
+    grid-area: advert;
+}
+#business {
+    grid-area: business;
+}
+#how-search-works {
+    grid-area: how-search-works;
+}
+#carbon {
+    grid-area: carbon;
+}
+#carbon-img {
+    height: 14px;
+    width: 14px;
+}
+#privacy {
+    grid-area: privacy;
+}
+#terms {
+    grid-area: terms;
+}
+#settings {
+    grid-area: settings;
 }
