@@ -84,13 +84,23 @@ body {
 }
 #search {
     width: 500px;
-    height: 34px;
+    height: 24px;
     border-radius: 20px;
     color: rgba(0,0,0,.87);
-    border: 1px solid rgb(179, 179, 192);
+    border: 1px solid #dbdcdd;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    font-size: 125%;
 }
 #search:hover{
-    box-shadow: 0 0 1px 1px rgba(179, 179, 192);
+    box-shadow: 0 0 3px 1px #dbdcdd;
+}
+#search:focus {
+    border: 1px solid #dbdcdd;
+    border-radius: 20px;
+    background: red;
+
 }
 .btn {
     margin-top: 20px;
